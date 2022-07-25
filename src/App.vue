@@ -3,11 +3,14 @@
     <router-link to="/hello">hello</router-link> |
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-    <router-view />
+    <router-view></router-view>
   </nav>
 </template>
 
 <style lang="scss">
+body {
+  background-color: deepskyblue;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -23,7 +26,7 @@ nav {
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #ffffff;
     }
   }
 }

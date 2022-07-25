@@ -6,5 +6,8 @@ import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
 
 const app = createApp(App);
-app.use(ElementPlus, { size: "small", zIndex: 3000 });
-app.use(store).use(router).mount("#app");
+app
+  .use(store)
+  .use(router)
+  .use(ElementPlus, { zIndex: 3000, size: "" }) // 使用element-plus
+  .mount("#app");
